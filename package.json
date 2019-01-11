@@ -1,0 +1,28 @@
+{
+  "name": "typescale-dw",
+  "version": "1.0.0",
+  "description": "Typescale used at downwrite.us",
+  "main": "index.css",
+  "browser": "./typescale-dw.css",
+  "author": "Charles ⚡ <charlespeters42@gmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "scripts": {
+    "build": "postcss index.css > typescale-dw.css",
+    "prepublish": "yarn build"
+  },
+  "postcss": {
+    "map": false,
+    "plugins": {
+      "cssnano": {
+        "preset": "default"
+      }
+    }
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.8",
+    "postcss-cli": "^6.1.1"
+  }
+}
